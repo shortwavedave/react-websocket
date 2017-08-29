@@ -23,6 +23,10 @@ class Websocket extends React.Component {
         }
         return Math.min(30, (Math.pow(2, k) - 1)) * 1000;
     }
+    
+    getWebSocket() {
+        return this.state.ws;
+    }
 
     setupWebsocket() {
       let websocket = this.state.ws;
